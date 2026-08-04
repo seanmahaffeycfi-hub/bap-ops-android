@@ -47,6 +47,7 @@ dependencies {
 
     // Local offline storage (Room 3)
     implementation(libs.androidx.room3.runtime)
+    implementation(libs.androidx.sqlite.framework)
     ksp(libs.androidx.room3.compiler)
 
     // Camera + receipt capture

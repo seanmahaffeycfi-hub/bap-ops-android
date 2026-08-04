@@ -10,6 +10,7 @@ activityKtx = "1.13.0"
 constraintlayout = "2.2.1"
 ksp = "2.3.3"
 room = "3.0.1"
+sqlite = "2.6.2"
 camerax = "1.6.0"
 mlkitTextRecognition = "16.0.1"
 playServicesLocation = "21.3.0"
@@ -31,6 +32,7 @@ androidx-constraintlayout = { group = "androidx.constraintlayout", name = "const
 # Local offline storage
 androidx-room3-runtime = { group = "androidx.room3", name = "room3-runtime", version.ref = "room" }
 androidx-room3-compiler = { group = "androidx.room3", name = "room3-compiler", version.ref = "room" }
+androidx-sqlite-framework = { group = "androidx.sqlite", name = "sqlite-framework", version.ref = "sqlite" }
 
 # Camera + receipt photo capture
 androidx-camera-core = { group = "androidx.camera", name = "camera-core", version.ref = "camerax" }
