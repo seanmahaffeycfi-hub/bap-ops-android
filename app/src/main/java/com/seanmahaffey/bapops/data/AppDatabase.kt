@@ -4,7 +4,6 @@ import android.content.Context
 import androidx.room3.Database
 import androidx.room3.Room
 import androidx.room3.RoomDatabase
-import androidx.room3.TypeConverters
 import androidx.sqlite.driver.AndroidSQLiteDriver
 
 @Database(
@@ -18,7 +17,6 @@ import androidx.sqlite.driver.AndroidSQLiteDriver
     version = 1,
     exportSchema = true
 )
-@TypeConverters(Converters::class)
 abstract class AppDatabase : RoomDatabase() {
     abstract fun expenseDao(): ExpenseDao
     abstract fun donationDao(): DonationDao

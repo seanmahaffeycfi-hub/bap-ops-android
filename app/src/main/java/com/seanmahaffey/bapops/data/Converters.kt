@@ -1,11 +1,11 @@
 package com.seanmahaffey.bapops.data
 
-import androidx.room3.TypeConverter
+import androidx.room3.ColumnTypeConverter
 
 class Converters {
-    @TypeConverter
+    @ColumnTypeConverter
     fun fromRecordType(value: RecordType): String = value.name
 
-    @TypeConverter
+    @ColumnTypeConverter
     fun toRecordType(value: String): RecordType = RecordType.valueOf(value)
 }
