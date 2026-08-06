@@ -40,6 +40,14 @@
         <activity
             android:name=".DonationEntryActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".VaseReceivedEntryActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".VaseReturnedEntryActivity"
+            android:exported="false" />
     </application>
 
 </manifest>

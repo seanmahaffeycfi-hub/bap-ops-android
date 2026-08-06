@@ -25,6 +25,28 @@
         android:layout_marginTop="16dp"
         android:text="Add Donation"
         app:layout_constraintTop_toBottomOf="@+id/addExpenseButton"
+        app:layout_constraintBottom_toTopOf="@+id/addVaseReceivedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addVaseReceivedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Vases Received"
+        app:layout_constraintTop_toBottomOf="@+id/addDonationButton"
+        app:layout_constraintBottom_toTopOf="@+id/addVaseReturnedButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addVaseReturnedButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Vases Returned"
+        app:layout_constraintTop_toBottomOf="@+id/addVaseReceivedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

@@ -24,5 +24,11 @@ class MainActivity : AppCompatActivity() {
         findViewById<android.widget.Button>(R.id.addDonationButton).setOnClickListener {
             startActivity(Intent(this, DonationEntryActivity::class.java))
         }
+        findViewById<android.widget.Button>(R.id.addVaseReceivedButton).setOnClickListener {
+            startActivity(Intent(this, VaseReceivedEntryActivity::class.java))
+        }
+        findViewById<android.widget.Button>(R.id.addVaseReturnedButton).setOnClickListener {
+            startActivity(Intent(this, VaseReturnedEntryActivity::class.java))
+        }
     }
 }
