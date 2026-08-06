@@ -30,5 +30,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<android.widget.Button>(R.id.addVaseReturnedButton).setOnClickListener {
             startActivity(Intent(this, VaseReturnedEntryActivity::class.java))
         }
+        findViewById<android.widget.Button>(R.id.addMileageButton).setOnClickListener {
+            startActivity(Intent(this, MileageEntryActivity::class.java))
+        }
     }
 }

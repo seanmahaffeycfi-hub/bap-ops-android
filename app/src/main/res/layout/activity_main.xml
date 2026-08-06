@@ -47,6 +47,17 @@
         android:layout_marginTop="16dp"
         android:text="Add Vases Returned"
         app:layout_constraintTop_toBottomOf="@+id/addVaseReceivedButton"
+        app:layout_constraintBottom_toTopOf="@+id/addMileageButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/addMileageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Mileage Entry"
+        app:layout_constraintTop_toBottomOf="@+id/addVaseReturnedButton"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />

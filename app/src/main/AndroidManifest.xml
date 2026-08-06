@@ -48,6 +48,10 @@
         <activity
             android:name=".VaseReturnedEntryActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".MileageEntryActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
