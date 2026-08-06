@@ -21,5 +21,8 @@ class MainActivity : AppCompatActivity() {
         findViewById<android.widget.Button>(R.id.addExpenseButton).setOnClickListener {
             startActivity(Intent(this, ExpenseEntryActivity::class.java))
         }
+        findViewById<android.widget.Button>(R.id.addDonationButton).setOnClickListener {
+            startActivity(Intent(this, DonationEntryActivity::class.java))
+        }
     }
 }

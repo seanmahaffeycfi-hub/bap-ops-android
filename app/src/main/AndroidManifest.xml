@@ -36,6 +36,10 @@
         <activity
             android:name=".ExpenseEntryActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".DonationEntryActivity"
+            android:exported="false" />
     </application>
 
 </manifest>
