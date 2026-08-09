@@ -5,11 +5,12 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="16dp"
     tools:context=".MainActivity">
 
     <Button
         android:id="@+id/addExpenseButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:text="Add Expense"
         app:layout_constraintTop_toTopOf="parent"
@@ -20,7 +21,7 @@
 
     <Button
         android:id="@+id/addDonationButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Add Donation"
@@ -31,7 +32,7 @@
 
     <Button
         android:id="@+id/addVaseReceivedButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Add Vases Received"
@@ -42,7 +43,7 @@
 
     <Button
         android:id="@+id/addVaseReturnedButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Add Vases Returned"
@@ -53,7 +54,7 @@
 
     <Button
         android:id="@+id/addMileageButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Add Mileage Entry"
@@ -64,7 +65,7 @@
 
     <Button
         android:id="@+id/syncNowButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Sync Now"
@@ -75,7 +76,7 @@
 
     <Button
         android:id="@+id/settingsButton"
-        android:layout_width="wrap_content"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:text="Settings"

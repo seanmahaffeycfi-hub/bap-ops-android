@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="black">#FF000000</color>
-    <color name="white">#FFFFFFFF</color>
+    <color name="bloom_blush">#F4A7B9</color>
+    <color name="sage_serenity">#7BAE8A</color>
+    <color name="ivory_petal">#FDF6EC</color>
+    <color name="deep_root">#3B2F2F</color>
+    <color name="sky_renewal">#A8D5E2</color>
+    <color name="sunrise_gold">#F2C06E</color>
 </resources>

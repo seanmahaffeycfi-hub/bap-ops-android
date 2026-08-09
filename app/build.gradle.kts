@@ -6,9 +6,7 @@ plugins {
 
 android {
     namespace = "com.seanmahaffey.bapops"
-    compileSdk {
-        version = release(37)
-    }
+    compileSdk = 37
 
     defaultConfig {
         applicationId = "com.seanmahaffey.bapops"
@@ -50,10 +48,10 @@ dependencies {
     implementation(libs.androidx.core.ktx)
     implementation(libs.material)
 
-    // Local offline storage (Room 3)
-    implementation(libs.androidx.room3.runtime)
+    // Local offline storage (Room)
+    implementation(libs.androidx.room.runtime)
     implementation(libs.androidx.sqlite.framework)
-    ksp(libs.androidx.room3.compiler)
+    ksp(libs.androidx.room.compiler)
 
     // Camera + receipt capture
     implementation(libs.androidx.camera.core)

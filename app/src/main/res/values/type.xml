@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Widget.BAPOps.Button" parent="Widget.AppCompat.Button">
+        <item name="android:backgroundTint">@color/bloom_blush</item>
+        <item name="android:textColor">@color/deep_root</item>
+        <!-- <item name="fontFamily">@font/elms_sans</item> -->
+    </style>
+
+    <style name="TextAppearance.BAPOps.Heading" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/league_spartan</item>
+        <item name="android:textColor">@color/deep_root</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="TextAppearance.BAPOps.Body" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/elms_sans</item>
+        <item name="android:textColor">@color/deep_root</item>
+    </style>
+</resources>
