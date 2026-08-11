@@ -1,7 +1,12 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.BAPOps" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your dark theme here. -->
-        <!-- <item name="colorPrimary">@color/my_dark_primary</item> -->
+    <style name="Theme.BAPOps" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/bloom_blush</item>
+        <item name="colorPrimaryDark">@color/deep_root</item>
+        <item name="colorAccent">@color/sage_serenity</item>
+        <item name="android:windowBackground">@color/ivory_petal</item>
+        <item name="android:textColorPrimary">@color/deep_root</item>
+        <item name="android:textColorHint">#8A6B5F</item>
+        <item name="android:editTextColor">@color/deep_root</item>
+        <item name="buttonStyle">@style/Widget.BAPOps.Button</item>
     </style>
 </resources>

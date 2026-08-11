@@ -38,7 +38,7 @@ class SyncManager(private val context: Context) {
                 val payload = ExpenseApiPayload(
                     date = isoDateFormat.format(Date(expense.date)),
                     description = expense.description,
-                    amount = expense.amount.toString(),
+                    amount = String.format(Locale.US, "%.2f", expense.amount),
                     record_type = expense.recordType.name,
                     is_car_expense = expense.isCarExpense,
                     receipt_image_url = null,
@@ -48,6 +48,9 @@ class SyncManager(private val context: Context) {
                 if (response.isSuccessful) {
                     dao.markSynced(expense.id)
                     successCount++
+                } else {
+                    val errorBody = response.errorBody()?.string() ?: "Unknown error"
+                    return SyncResult.NetworkError("Expense rejected (${response.code()}): $errorBody")
                 }
             } catch (e: Exception) {
                 return SyncResult.NetworkError(e.message ?: "Unknown error")
@@ -71,7 +74,7 @@ class SyncManager(private val context: Context) {
                 val payload = DonationApiPayload(
                     date = isoDateFormat.format(Date(donation.date)),
                     description = donation.description,
-                    value = donation.value.toString(),
+                    value = String.format(Locale.US, "%.2f", donation.value),
                     donor_name = donation.donorName,
                     receipt_generated = donation.receiptGenerated
                 )
@@ -79,6 +82,9 @@ class SyncManager(private val context: Context) {
                 if (response.isSuccessful) {
                     dao.markSynced(donation.id)
                     successCount++
+                } else {
+                    val errorBody = response.errorBody()?.string() ?: "Unknown error"
+                    return SyncResult.NetworkError("Donation rejected (${response.code()}): $errorBody")
                 }
             } catch (e: Exception) {
                 return SyncResult.NetworkError(e.message ?: "Unknown error")
@@ -112,6 +118,9 @@ class SyncManager(private val context: Context) {
                 if (response.isSuccessful) {
                     dao.markSynced(vase.id)
                     successCount++
+                } else {
+                    val errorBody = response.errorBody()?.string() ?: "Unknown error"
+                    return SyncResult.NetworkError("Vase received rejected (${response.code()}): $errorBody")
                 }
             } catch (e: Exception) {
                 return SyncResult.NetworkError(e.message ?: "Unknown error")
@@ -141,6 +150,9 @@ class SyncManager(private val context: Context) {
                 if (response.isSuccessful) {
                     dao.markSynced(vase.id)
                     successCount++
+                } else {
+                    val errorBody = response.errorBody()?.string() ?: "Unknown error"
+                    return SyncResult.NetworkError("Vase returned rejected (${response.code()}): $errorBody")
                 }
             } catch (e: Exception) {
                 return SyncResult.NetworkError(e.message ?: "Unknown error")
@@ -163,8 +175,8 @@ class SyncManager(private val context: Context) {
             try {
                 val payload = MileageEntryApiPayload(
                     date = isoDateFormat.format(Date(entry.date)),
-                    start_mileage = entry.startMileage.toString(),
-                    end_mileage = entry.endMileage.toString(),
+                    start_mileage = String.format(Locale.US, "%.1f", entry.startMileage),
+                    end_mileage = String.format(Locale.US, "%.1f", entry.endMileage),
                     record_type = entry.recordType.name,
                     start_lat = entry.startLat,
                     start_lng = entry.startLng,
@@ -175,6 +187,9 @@ class SyncManager(private val context: Context) {
                 if (response.isSuccessful) {
                     dao.markSynced(entry.id)
                     successCount++
+                } else {
+                    val errorBody = response.errorBody()?.string() ?: "Unknown error"
+                    return SyncResult.NetworkError("Mileage entry rejected (${response.code()}): $errorBody")
                 }
             } catch (e: Exception) {
                 return SyncResult.NetworkError(e.message ?: "Unknown error")
